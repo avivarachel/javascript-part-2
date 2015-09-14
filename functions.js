@@ -49,4 +49,14 @@ var nameEmail = [
 };
 
 nameEmail.sort(emailAlphabetical);
- // will sort by alphabetical order of e-mail addresses 
+ // will sort by alphabetical order of e-mail addresses
+ 
+ // 3. using Array.prototype.map, function will take a number adn return its square
+ 
+ var numbers = [9, 16, 64, 81];
+ 
+ function squareRoots(num) { // created a function called squareRoots that will take a number as parameter
+   return Math.sqrt(num);
+}
+
+var rootArray = numbers.map(squareRoots); // map creates a new array that applies the function (squareRoots) on each element
