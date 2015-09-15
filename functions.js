@@ -74,3 +74,31 @@ var squareMe = cities.map(function(obj) {
     someObjects["num"] = obj.num * obj.num;
     return someObjects;
 }); // This removes the name property... Not necessary?
+
+// 5. operationMaker - add, sub, mult, div
+
+function operationMaker(operation) {
+    switch(operation) {
+        case "add":
+            return function add(num1, num2){
+                return num1 + num2;
+            };
+        case "sub":
+            return function sub(num1, num2) {
+                return num1 - num2;
+            };
+        case "mult":
+            return function mult(num1, num2) {
+                return num1 * num2;        
+                };
+        case "div":
+            return function div(num1, num2) {
+                return num1 / num2;
+            };
+ 
+    };
+};
+
+console.log(
+    operationMaker("div")(30, 2));
+    
