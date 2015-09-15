@@ -60,3 +60,17 @@ nameEmail.sort(emailAlphabetical);
 }
 
 var rootArray = numbers.map(squareRoots); // map creates a new array that applies the function (squareRoots) on each element
+
+// 4. This function will take an object and square its “num” property
+ 
+ var cities = [
+    {city:"London", num:100},
+    {city:"Tokyo", num:4},
+    {city:"Paris", num:25}
+  ]
+
+var squareMe = cities.map(function(obj) {
+   var someObjects = {};
+    someObjects["num"] = obj.num * obj.num;
+    return someObjects;
+}); // This removes the name property... Not necessary?
